@@ -1,5 +1,5 @@
 import React from "react";
-import encrypted from "../../Assets/encrypted.svg";
+import encrypted from "../../assets/encrypted.svg";
 // karthik
 const Footer = () => {
   return (
