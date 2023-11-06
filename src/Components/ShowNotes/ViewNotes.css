@@ -1,0 +1,190 @@
+#note-area {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  gap: 1em;
+}
+#note-area img {
+  width: 26vw;
+}
+#note-area h1 {
+  text-transform: capitalize;
+  font-size: 2vw;
+  font-weight: 500;
+}
+#note-area p {
+  font-size: 1.1em;
+  line-height: 1.3em;
+  width: 26vw;
+  color: #292929;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 1em;
+  text-align: center;
+  color: #292929;
+}
+footer img {
+  height: 15px;
+  width: 15px;
+  margin-right: 3px;
+}
+footer p {
+  font-size: 1em;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+.notes-input {
+  font-family: "Roboto";
+  flex: 3 0 0;
+  height: 100vh;
+  background-color: #F7ECDC;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.notes-input .group-heading {
+  padding: 0.8em;
+  display: flex;
+  background-color: #E8E8E8;
+  align-items: center;
+  gap: 1em;
+}
+.notes-input .group-icon {
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 1em;
+  border-radius: 50%;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .notes-input .group-icon {
+    font-size: 1em;
+    padding: 1.2em;
+  }
+}
+.notes-input .group-name {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .notes-input .group-name {
+    font-size: 1em;
+  }
+}
+
+.input-note {
+  width: 100%;
+  background-color: #E8E8E8;
+  padding: 1em;
+  position: relative;
+}
+.input-note textarea {
+  border-radius: 10px;
+  border: 1px solid #CCCCCC;
+  padding: 0.5em;
+  font-size: 2vmax;
+  font-family: "Roboto";
+  color: #9A9A9A;
+  resize: none;
+  width: 100%;
+  height: 20vh;
+}
+@media (max-width: 768px) {
+  .input-note textarea {
+    height: 15vh;
+    margin-bottom: 3em;
+  }
+}
+
+textarea::-webkit-scrollbar {
+  width: 12px;
+}
+
+textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 136, 0, 0.3);
+}
+
+textarea::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgb(156, 126, 126);
+}
+
+.saved-notes {
+  padding: 1em;
+  height: 65vh;
+  overflow-y: auto;
+  font-family: "Roboto";
+}
+
+.saved-notes::-webkit-scrollbar {
+  width: 12px;
+}
+
+.saved-notes::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 136, 0, 0.3);
+}
+
+.saved-notes::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgb(156, 126, 126);
+}
+
+.save-note {
+  position: absolute;
+  font-size: 2vmax;
+  color: #ABABAB;
+  right: 1em;
+  bottom: 1em;
+}
+@media (max-width: 768px) {
+  .save-note {
+    right: 2em;
+    bottom: 5em;
+  }
+}
+
+.notes-content {
+  display: flex;
+  gap: 1.5em;
+  margin-bottom: 1em;
+}
+
+.time-data {
+  width: 6.5vw;
+}
+@media (max-width: 1400px) {
+  .time-data {
+    width: 10vw;
+  }
+}
+@media (max-width: 768px) {
+  .time-data {
+    width: 50vw;
+  }
+}
+
+.back-btn {
+  display: none;
+}
+@media (max-width: 768px) {
+  .back-btn {
+    cursor: pointer;
+    display: block;
+    font-size: 8vw;
+  }
+}

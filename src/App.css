@@ -1,0 +1,22 @@
+/* karthik */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-y: hidden;
+}
+
+@media (max-width: 768px) {
+
+  #create-container.mobile-view{
+  display: none;
+  }
+  .input-container.mobile-view{
+  display: none;
+  }
+  
+} 

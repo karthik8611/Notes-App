@@ -1,0 +1,269 @@
+#create-container {
+  flex: 1 0 0;
+  height: 100vh;
+  padding-top: 10px;
+}
+/* karthik */
+
+header h1 {
+  font-family: "Roboto";
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 2vmax;
+  margin-left: 0.8em;
+}
+@media (max-width: 768px) {
+  header h1 {
+    margin-left: 1em;
+    font-size: 2.2vmax;
+  }
+}
+
+#create-area {
+  margin-top: 1em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.insert-note {
+  cursor: pointer;
+  margin-bottom: 1.5em;
+  font-family: "Roboto";
+  color: #fff;
+  background-color: #000;
+  padding: 0.2em 1em;
+  border-radius: 100px;
+  border: 0;
+  outline: none;
+  font-size: 1.2vmax;
+  width: 80%;
+}
+@media (max-width: 768px) {
+  .insert-note {
+    font-size: 1.2em;
+    width: 90%;
+    padding: 0.3em 1em;
+    margin: 0 auto 1em auto;
+  }
+}
+.insert-note span {
+  margin-right: 10px;
+  font-weight: 900;
+}
+
+/* karthik */
+
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(47, 47, 47, 0.75);
+}
+
+#popup-content {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 5px;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  #popup-content {
+    padding: 1em;
+    top: 40%;
+    left: 40%;
+    transform: translate(-40%, -40%);
+  }
+}
+
+#popup-content h1 {
+  font-family: "Roboto";
+  font-size: 2em;
+  margin: 0 0 1em;
+}
+@media (max-width: 768px) {
+  #popup-content h1 {
+    font-size: 1.2em;
+  }
+}
+
+.insert-group,
+.select-color {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5em;
+  gap: 1em;
+}
+@media (max-width: 768px) {
+  .insert-group,
+  .select-color {
+    margin-bottom: 1em;
+  }
+}
+
+.insert-group label,
+.select-color label {
+  font-family: "Roboto";
+  font-size: 1.5em;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .insert-group label,
+  .select-color label {
+    font-size: 1em;
+    width: 27vw;
+  }
+}
+
+/* karthik */
+.insert-group input {
+  width: 20em;
+  padding: 10px;
+  border: 2px solid #CCCCCC;
+  border-radius: 50px;
+}
+@media (max-width: 768px) {
+  .insert-group input {
+    width: 15em;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .insert-group input::-moz-placeholder {
+    font-size: 0.8em;
+  }
+  .insert-group input::placeholder {
+    font-size: 0.8em;
+  }
+}
+
+.color-name {
+  display: flex;
+  gap: 0.5em;
+}
+
+.group-color {
+  cursor: pointer;
+  width: 1.5vmax;
+  height: 1.5vmax;
+  border-radius: 100%;
+}
+@media (max-width: 768px) {
+  .group-color {
+    width: 2.5vmax;
+    height: 2.5vmax;
+  }
+}
+
+.create-btn {
+  display: block;
+  font-family: "Roboto";
+  font-size: 1em;
+  padding: 0.3em 1.5em;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+@media (max-width: 768px) {
+  .create-btn {
+    font-size: 1em;
+    padding: 0.2em 1em;
+    align-self: auto;
+    margin: 0 2em;
+  }
+}
+
+.group-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: start;
+  overflow-y: auto;
+  height: 85vh;
+  padding: 0 0 0 1.5em;
+}
+
+.group-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.group-container::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 136, 0, 0.3);
+}
+
+.group-container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgb(156, 126, 126);
+}
+
+.group {
+  cursor: pointer;
+  padding: 1em;
+  border-radius: 30px 0 0 30px;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  font-family: "Roboto";
+}
+@media (max-width: 768px) {
+  .group {
+    padding: 0.5em;
+  }
+}
+.group .group-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 1em;
+  border-radius: 50%;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .group .group-icon {
+    font-size: 1em;
+    padding: 1.2em;
+  }
+}
+.group .group-name {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .group .group-name {
+    font-size: 1em;
+  }
+}
+
+.group.active {
+  background-color: #F7ECDC;
+}
+
+.container {
+  display: flex;
+}
+
+.input-container {
+  flex: 3 0 0;
+  height: 100vh;
+  background-color: #F7ECDC;
+  position: relative;
+} 
+
