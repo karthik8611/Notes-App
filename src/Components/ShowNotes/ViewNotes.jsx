@@ -1,7 +1,7 @@
 import React from "react";
 import "./ViewNotes.css";
 import Footer from "./Footer";
-import background_image from "../../Assets/background-image.png";
+import background_image from "../../Assets/bgimage.png";
 
 const ViewNotes = () => {
   return (
